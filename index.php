@@ -40,7 +40,7 @@ if ($conn->connect_error) {
         
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
-                echo "id: " . $row["slno"]. " - Name: " . $row["entity_name"]. " " . $row["fatca"]." " . $row["crs"]" " . $row["rationale"]. "<br>";
+                echo "id: " . $row["slno"]. " - Name: " . $row["entity_name"]. " " . $row["fatca"]." " . $row["crs"] . $row["rationale"]. "<br>";
             }
         } else {
             echo "0 results";
