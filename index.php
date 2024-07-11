@@ -25,10 +25,12 @@ include 'conn.php'
                     echo "
                     <thead>
                         <tr>
-                            <th scope='col'>".printf ("%s", $row[0]);."</th>
-                            <td scope="col">".printf ("%s", $row[1]);."</td>
-                            <td scope="col">".printf ("%s", $row[2]);."</td>
-                            <td scope="col">".printf ("%s", $row[3]);."</td>
+                            <th scope='col'>".$row[0]."</th>
+                            <td scope='col'>".$row[1]."</td>
+                            <td scope='col'>".$row[2]."</td>
+                            <td scope='col'>".$row[3]."</td>
+                            <td scope='col'>".$row[4]."</td>
+                            <td scope='col'>".$row[5]."</td>
                         </tr>
                     </thead>";
 
@@ -37,10 +39,12 @@ include 'conn.php'
                     
                     echo "<tbody>
                       <tr>
-                      <th scope="col">".printf ("%s", $row[0]);."</th>
-                      <td scope="col">".printf ("%s", $row[1]);."</td>
-                      <td scope="col">".printf ("%s", $row[2]);."</td>
-                      <td scope="col">".printf ("%s", $row[3]);."</td>
+                      <th scope='col'>".$row[0]."</th>
+                      <td scope='col'>".$row[1]."</td>
+                      <td scope='col'>".$row[2]."</td>
+                      <td scope='col'>".$row[3]."</td>
+                      <td scope='col'>".$row[4]."</td>
+                      <td scope='col'>".$row[5]."</td>
                       </tr>
                       </tbody>";
                 }
