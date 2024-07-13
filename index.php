@@ -14,7 +14,7 @@ include 'conn.php'
 <body >
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">My Website</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,18 +37,31 @@ include 'conn.php'
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
-    <div class="container mt-4">
-        <table class='table table-striped'>
+    <div class="container m-0 p-0" style="width: 150%;">
+        <table class='table table-bordered border border-secondary '>
             <thead>
-                <tr>
-                    <th>slno</th>
-                    <th>Entity Name</th>
-                    <th>country</th>
-                    <th>Fatca</th>
-                    <th>crs</th>
-                    <th>rationale</th>
+                <tr class="table-dark" style="width: 150%;">
+                    <th>Sl No.</th>
+                    <th>Legal Entity Name/ID</th>
+                    <th>Country of Incorporation</th>
+                    <th>Country of Tax Residence/Country of Central Management and Control</th>
+                    <th>Ownership Information</th>
+                    <th>Outside Client Group Ownership </th>
+                    <th colspan="2">Self-certs or US tax forms received from non-Client group Owners?</th>
+                    <th>Principal purpose / activities</th>
+                    <th>Assets/Liabilities Information</th>
+                    <th>Documentation Provided</th>
+                    <th>Local Law Opinion Sought</th>
+                    <th>Any distinguishing features of the legal entity</th>
+                    <th>Proposed CRS Classification</th>
+                    <th>Proposed FATCA Classification</th>
+                    <th>Justification</th>
+                    <th>Structure chart provided by Client</th>
+                    <th>Snippet of SC</th>
+                    <th class="bg-danger text-black">Email Subject Line - INTERNAL</th>
+                    <th class="bg-warning text-black ">Change in facts & circumsatnces</th>
                 </tr>
             </thead>
 
@@ -67,6 +80,19 @@ include 'conn.php'
                             <td>".$row[3]."</td>
                             <td>".$row[4]."</td>
                             <td>".$row[5]."</td>
+                            <td colspan='2'>".$row[6]."</td>
+                            <td>".$row[7]."</td>
+                            <td>".$row[8]."</td>
+                            <td>".$row[9]."</td>
+                            <td>".$row[10]."</td>
+                            <td>".$row[11]."</td>
+                            <td>".$row[12]."</td>
+                            <td>".$row[13]."</td>
+                            <td>".$row[14]."</td>
+                            <td>".$row[15]."</td>
+                            <td>".$row[16]."</td>
+                            <td>".$row[17]."</td>
+                            <td>".$row[18]."</td>
                         </tr>                    
                     </tbody>";
                 }
